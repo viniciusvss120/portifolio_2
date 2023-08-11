@@ -1,0 +1,21 @@
+.card{
+  display: grid;
+  max-width: 250px;
+  height: 200px;
+  justify-items: center;
+  box-shadow: 0px 0px 4px 0px #fb2;
+  border-radius: 10px;
+  /* border: 1px solid #fff; */
+}
+
+.titulo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.descricao{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}

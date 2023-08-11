@@ -1,0 +1,23 @@
+.container{
+  margin: 100px auto;
+  display: grid;
+}
+
+.container h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px auto 50px 10px;
+  color: #FFBB00;
+}
+.container button{
+  justify-self: center;
+  margin-bottom: 10px;
+}
+.habilidades{
+  width: 90%;
+  background:#101010;
+  justify-self: center;
+  display: grid;
+  /* box-shadow: 0px 0px 5px 0px #151515; */
+}
