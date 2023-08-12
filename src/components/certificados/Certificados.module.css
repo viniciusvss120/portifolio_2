@@ -1,0 +1,25 @@
+.container{
+  margin: 100px auto;
+  display: grid;
+  /* box-shadow: 0px 0px 5px 0px #f5f5f5; */
+}
+
+.container h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px auto 50px 10px;
+  color: #FFBB00;
+}
+.container button{
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
+.certificados{
+  width: 90%;
+  background:#101010;
+  justify-self: center;
+  display: grid;
+  gap: 50px;
+}
