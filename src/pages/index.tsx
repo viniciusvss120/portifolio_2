@@ -1,5 +1,6 @@
 import Certificados from "@/components/certificados/Certificados"
 import Contato from "@/components/contato/Contato"
+import Footer from "@/components/footer/Footer"
 import Habilidades from "@/components/habilidades/Habilidades"
 import Home from "@/components/home/Home"
 import Projetos from "@/components/projetos/Projetos"
@@ -14,6 +15,7 @@ export default function PaginaHome() {
       <Habilidades />
       <Certificados />
       <Contato />
+      <Footer />
     </div>
   )
 }

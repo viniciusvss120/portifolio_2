@@ -16,7 +16,7 @@
   display: grid;
   justify-content: center;
   width: 90%;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 
 .contato p {
@@ -76,4 +76,18 @@
   width: 45%;
   height: 3px;
   background: #fff;
+}
+
+.icons{
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+}
+
+.icons img{
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
 }
