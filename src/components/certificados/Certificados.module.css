@@ -23,3 +23,9 @@
   display: grid;
   gap: 50px;
 }
+
+@media (max-width: 40rem){
+  .certificados{
+    width: 100%;
+  }
+}
