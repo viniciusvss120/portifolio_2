@@ -97,18 +97,37 @@
 @media (max-width: 40rem){
   .container{
     width: 100%;
+    /* border: 1px solid #fff; */
+    
   }
   .contato{
     display: block;
-    margin: 0 auto;
-    width: 100%;
+    margin-left: 15px;
+    /* border: 1px solid #fff; */
+  }
+
+  .contato p{
+    font-size: 1.1rem;
+    margin-left: 80px;
   }
 
   .formulario input{
-    width: 100%;
+    width: 850px;
+    margin-left: 80px;
   }
 
+  .formulario textarea{
+    margin-left: 80px;
+    width: 200px;
+  }
   .formulario button{
+    margin-left: 80px; /* margin: 0 auto; */
+  }
+
+  .divisa{
     margin: 0 auto;
+  }
+  .icons{
+    gap: 35px;
   }
 }

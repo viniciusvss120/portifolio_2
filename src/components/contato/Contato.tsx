@@ -15,7 +15,7 @@ export default function Contato(){
         <form className={style.formulario}>
           <input type="text" placeholder='Digite seu nome'/>
           <input type="email" placeholder='Digite seu e-mail' />
-          <textarea name="mensagem" placeholder='Menssagem' cols={117} rows={10}></textarea>
+          <textarea name="mensagem" placeholder='Menssagem' cols={127} rows={6}></textarea>
           <button type="submit">Enviar</button>
         </form>
         <div className={style.divisa}>

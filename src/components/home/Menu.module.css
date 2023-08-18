@@ -29,6 +29,21 @@
 .container button a {
   padding: 15px;
 }
+
+@media (max-width: 40rem){
+  .container p a{
+    font-size: 30px;
+  }
+  .container button{
+    width: 120px;
+    height: 30px;
+
+  }
+  .container button a {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
 /* .nav{
   width: 80%;
   height: 50px;
