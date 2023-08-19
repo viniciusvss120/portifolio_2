@@ -1,0 +1,84 @@
+.container{
+  display: grid;
+  /* border: 1px solid #fff; */
+  font-family: Arial, Helvetica, sans-serif;
+  justify-items: center;
+}
+
+.container h1{
+  font-size: 2rem;
+  color: #ffb041;
+}
+
+.container p{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+/* Formulario */
+.form{
+  display: grid;
+  width: 90%;
+  gap: 10px;
+}
+
+.form input{
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.form input:focus{
+  border: none;
+  box-shadow: 0px 0px 10px 0px #ffb041;
+}
+
+.form textarea{
+  border-radius: 10px;
+}
+
+.form button{
+  width: 140px;
+  height: 60px;
+  justify-self: end;
+  border-radius: 10px;
+  background: #FFBB00;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Contato alternativo */
+
+.divisa{
+  width: 80%;
+  margin-bottom: 20px;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  justify-self: center;
+}
+
+.divisa span{
+  width: 100px;
+  height: 3px;
+  background: #fff;
+}
+
+.icons{
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  justify-self: center;
+}
+
+.icons img{
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+}

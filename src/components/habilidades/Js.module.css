@@ -39,7 +39,7 @@
   margin-left: -1em;
 }
 
-@media (max-width: 40rem){
+@media (max-width: 48rem){
   .container{
     grid-template-columns: 1fr;
     width: 90%;

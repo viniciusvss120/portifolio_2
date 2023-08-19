@@ -21,7 +21,7 @@ export default function Home() {
           width: window.screen.width
         })
     }
-    if(dimensao.width < 640){
+    if(dimensao.width < 780){
       setMobile(true)
     }else{
       setMobile(false)
