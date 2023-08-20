@@ -30,11 +30,9 @@ export default function Home() {
     addEventListener('resize', widthTela)
   },[dimensao.width])
   
-  console.log(dimensao)
-
   return (
     <div>
-      {mobile ?   <HomeMobile />:<HomeDascktop />}
+      {mobile ? <HomeMobile />:<HomeDascktop />}
      
       {/* <HomeMobile /> */}
     </div>

@@ -4,7 +4,7 @@ import Image from "next/image"
 import perfil from '../../../public/perfil.png'
 import Cards from "./Cards"
 
-export default function Home() {
+export default function HomeDascktop() {
   return (
     <div className={style.container}>
       <Menu />
