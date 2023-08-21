@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import style from './ContatoMobile.module.css'
+import {useState} from 'react'
 import linkedin from './img/linkedin.png'
 import whatsapp from './img/whatsapp.png'
 import github from './img/github.png'
@@ -11,14 +12,24 @@ interface EmailProp{
 }
 
 export default function ContatoMobile(){
+  const [form, setForm] = useState<EmailProp>({
+    nome: '',
+    email: '',
+    mensagem: ''
+  })
+
+  const handleChenge = (event: any) => {
+    const {id, value} = event.target
+    setForm({ ...form, [id]: value })
+  }
 
   async function enviarEmail(event: any){
     event.preventDefault()
     try{
       const msg:EmailProp = {
-        nome: "Vinicius Silva",
-        email: "vinicius100@live.com",
-        mensagem: "Bom dia Mobile"
+        nome: form.nome,
+        email: form.email,
+        mensagem: form.mensagem
       }
       
     const options = {
@@ -35,6 +46,12 @@ export default function ContatoMobile(){
     alert("Mensagem enviada.")
     }catch(error){
       console.log(error)
+    }finally{
+      setForm({
+        nome: '',
+        email: '',
+        mensagem: ''
+      })
     }
   }
   return(
@@ -44,9 +61,9 @@ export default function ContatoMobile(){
         Pode entrar em contato enviando um e-mail, através desse formulário ou pelas minhas redes socias logo abaixo.
       </p>
       <form onSubmit={enviarEmail} className={style.form}>
-        <input type="text" placeholder='Digite seu nome'/>
-        <input type="email" placeholder='Digite seu e-mail'/>
-        <textarea name="mensagem" placeholder='Mensagem...' id="" cols={30} rows={10}></textarea>
+        <input type="text" value={form?.nome} onChange={handleChenge} id='nome' placeholder='Digite seu nome'/>
+        <input type="email" value={form?.email} onChange={handleChenge} id='email' placeholder='Digite seu e-mail'/>
+        <textarea name="mensagem" value={form?.mensagem} onChange={handleChenge} id='mensagem' placeholder='Mensagem...' cols={30} rows={10}></textarea>
         <button type="submit">Enviar</button>
       </form>
       <div className={style.divisa}>
