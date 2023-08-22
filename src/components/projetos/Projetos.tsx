@@ -9,10 +9,10 @@ export default function Projetos(){
     <div className= {style.container}>
       <h1>Projetos</h1>
       <div className={style.projeto}>
-       <SiteImobiliario />
-       <Dogs />
-       <McDonald />
-       <Acessos />
+        <a href="#"><SiteImobiliario /></a> 
+       <a href="#"><Dogs /></a>
+       <a href="https://github.com/viniciusvss120/projeto-McDonald-s"  target='_blank'><McDonald /></a> 
+       <a href="https://github.com/viniciusvss120/controle_acessos" target='_blank'><Acessos /></a> 
       </div>
       <button className='botao'><a href="#">Veja mais</a></button>
     </div>

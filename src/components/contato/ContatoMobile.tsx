@@ -17,6 +17,7 @@ export default function ContatoMobile(){
     email: '',
     mensagem: ''
   })
+  const [msg, setMsg] = useState<boolean>(false)
 
   const handleChenge = (event: any) => {
     const {id, value} = event.target
@@ -40,10 +41,10 @@ export default function ContatoMobile(){
       body: JSON.stringify(msg)
     }
     const res = await fetch('http://localhost:3003/contato', options)
-     
-    console.log("Deu certo", res)
 
-    alert("Mensagem enviada.")
+    if(res){
+      setMsg(true)
+    }
     }catch(error){
       console.log(error)
     }finally{
@@ -60,6 +61,7 @@ export default function ContatoMobile(){
       <p>
         Pode entrar em contato enviando um e-mail, através desse formulário ou pelas minhas redes socias logo abaixo.
       </p>
+      {msg ? <p>Mensagem enviada</p>: 'Error'}
       <form onSubmit={enviarEmail} className={style.form}>
         <input type="text" value={form?.nome} onChange={handleChenge} id='nome' placeholder='Digite seu nome'/>
         <input type="email" value={form?.email} onChange={handleChenge} id='email' placeholder='Digite seu e-mail'/>
