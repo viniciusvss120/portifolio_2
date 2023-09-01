@@ -1,15 +1,14 @@
 import style from './Js.module.css'
 
-export default function Vue(){
+export default function Git_GitHub(){
   return (
     <div className={`${style.container}`}>
-      <h2>Vue.js</h2>
+      <h2>Git e Github</h2>
       <div className={style.habilidadesItem}>
         <ul>
-          <li>Vue Router</li>
-          <li>Vuex</li>
-          <li>Hooks</li>
-          <li>Componentes</li>
+          <li>Controle de versão</li>
+          <li>clonar projetos</li>
+          <li>subir projetos</li>
         </ul>
       </div>
     </div>

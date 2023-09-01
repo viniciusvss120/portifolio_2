@@ -1,8 +1,8 @@
 .container{
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  width: 50%;
+  width: 300px;
   box-shadow: 0px 0px 5px 0px #454545;
   justify-self: center;
   justify-content: space-between;
@@ -12,7 +12,8 @@
 .container h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  margin-left: 10px;
+  justify-self: center;
+  /* margin-left: 10px; */
 }
 
 /* .habilidadesItem */
@@ -27,7 +28,7 @@
 
 .habilidadesItem ul li{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.rem;
 }
 
 .habilidadesItem ul li::before {

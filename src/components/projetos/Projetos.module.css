@@ -27,6 +27,7 @@
 
 .projetoItem{
   max-width: 650px;
+  height: 500px;
   display: grid;
   box-shadow: 0px 0px 5px 0px #424242;
 }
@@ -63,6 +64,7 @@
 }
 
 .tecnologias ul {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 7px;

@@ -7,7 +7,7 @@ interface dimensaoProp {
 }
 export default function Contato(){
   const[dimensao, setDimensao] = useState<dimensaoProp>({
-    width: 0
+    width: 781
   })
   const [mobile, setMobile] = useState<boolean>(false)
   useEffect(() => {

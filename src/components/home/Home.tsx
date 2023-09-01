@@ -2,7 +2,7 @@
 import HomeDascktop from "./HomeDescktop"
 
 import HomeMobile from "./home_mobile/HomeMobile"
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 interface dimensaoProp {
   height?: number
@@ -11,28 +11,33 @@ interface dimensaoProp {
 
 export default function Home() {
   const[dimensao, setDimensao] = useState<dimensaoProp>({
-    width: 0
+    width: 781
   })
   const [mobile, setMobile] = useState<boolean>(false)
-  useEffect(() => {
-    function widthTela(){
+
+  function widthTela(){
+    if(typeof window !== undefined){
       setDimensao({
           // height: window.innerHeight,
-          width: window.screen.width
+          width: screen.width
         })
     }
-    if(dimensao.width < 780){
+    
+  }
+  useEffect(() => {
+
+    if(dimensao.width <= 780){
       setMobile(true)
     }else{
       setMobile(false)
     }
-
     addEventListener('resize', widthTela)
-  },[dimensao.width])
-  
+
+  }, [dimensao.width])
+      
   return (
     <div>
-      {mobile ? <HomeMobile />:<HomeDascktop />}
+      {mobile ? <HomeMobile /> : <HomeDascktop />}
      
       {/* <HomeMobile /> */}
     </div>

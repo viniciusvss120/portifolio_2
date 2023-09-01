@@ -1,0 +1,27 @@
+
+.container{
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+
+.navegacao{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 30px auto
+}
+
+.navegacao img {
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.habilidades{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  background: #151115;
+}
+

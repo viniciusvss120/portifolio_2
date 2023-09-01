@@ -14,7 +14,7 @@ export default function Projetos(){
        <a href="https://github.com/viniciusvss120/projeto-McDonald-s"  target='_blank'><McDonald /></a> 
        <a href="https://github.com/viniciusvss120/controle_acessos" target='_blank'><Acessos /></a> 
       </div>
-      <button className='botao'><a href="#">Veja mais</a></button>
+      <button className='botao'><a href="/hooks/projetos">Veja mais</a></button>
     </div>
   )
 }
