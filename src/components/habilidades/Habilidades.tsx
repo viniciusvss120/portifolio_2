@@ -4,6 +4,7 @@ import JavaScript from './JavaScript'
 import Node from './Node'
 import Vue from './Vue'
 import ReactComponente from './React'
+import Link from 'next/link'
 
 export default function Habilidades(){
   const [page, setPage] = useState<unknown>()
@@ -23,7 +24,7 @@ export default function Habilidades(){
         <Node />
         <Vue />
         <ReactComponente />
-      <button className='botao'><a href="/hooks/habilidades">Veja mais</a></button>
+      <button className='botao'><Link href="/hooks/habilidades">Veja mais</Link></button>
       </div>
     </div>
   )
