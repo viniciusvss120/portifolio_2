@@ -4,6 +4,7 @@ import Vue from './Vue'
 import ReactCertificado from './React'
 import HTML_CSS from './Html_Css'
 import Node from './Node'
+import Link from 'next/link'
 
 export default function Certificados(){
   return(
@@ -15,7 +16,7 @@ export default function Certificados(){
         <ReactCertificado />
         <HTML_CSS />
         <Node />
-        <button className='botao'><a href="#">Veja mais</a></button>
+        <button className='botao'><Link href="#">Veja mais</Link></button>
       </div>
     </div>
   )
