@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import style from './projeto.module.css'
-import imobiliaria from '../projetos/img/imobiliario.png'
+import acessos from '../projetos/img/acessos.png'
 import js from '../projetos/img/js.png'
 import vue from '../projetos/img/vue.png'
 import node from '../projetos/img/node.png'
@@ -11,12 +11,11 @@ import github from '../projetos/img/github.png'
 export default function SiteImobiliario(){
   return (
     <div className={style.container}>
-      <Image src={imobiliaria} alt='imobiliaria'/>
+      <Image src={acessos} alt='acessos'/>
       <div className={style.descricao}>
-        <h3>Site imobiliário</h3>
+        <h3>Controle de acessos</h3>
         <p>
-          Esse projeto tem como finalidade facilitar o acesso a imóveis.
-          No site é possível alugar ou comprar o imóvel.
+          API de controle de acessos, essa api pode ser usada em diversos tipos de sistemas.
         </p>
         <div className={style.tecnologias}>
           <span>Tecnologias usadas:</span>

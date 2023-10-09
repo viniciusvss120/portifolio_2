@@ -17,11 +17,11 @@ export default function SiteImobiliario(){
       <span>Tecnologias utilizadas: </span>
       <ul>
         <li><Image className={style.icon} src={js} alt='js'/></li>
-        <li><Image className={style.icon} src={vue} alt='js'/></li>
-        <li><Image className={style.icon} src={node} alt='js'/></li>
-        <li><Image className={style.icon} src={sql} alt='js'/></li>
-        <li><Image className={style.icon} src={git} alt='js'/></li>
-        <li><Image className={style.icon} src={github} alt='js'/></li>
+        <li><Image className={style.icon} src={vue} alt='vue'/></li>
+        <li><Image className={style.icon} src={node} alt='node'/></li>
+        <li><Image className={style.icon} src={sql} alt='sql'/></li>
+        <li><Image className={style.icon} src={git} alt='git'/></li>
+        <li><Image className={style.icon} src={github} alt='github'/></li>
       </ul>
     </div>
   </div>

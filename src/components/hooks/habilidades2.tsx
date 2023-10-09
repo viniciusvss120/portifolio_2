@@ -7,7 +7,7 @@ import Vue from '@/components/habilidades2/Vue'
 import ReactComponente from '@/components/habilidades2/React'
 import seta from '@/pages/hooks/img/seta.png'
 import Link from "next/link";
-import Git_GitHub from "../habilidades2/Git-Github";
+import Git_GitHub from '@/components/habilidades2/Git-GitHub';
 import MySQL from "../habilidades2/MySQL";
 
 export default function habilidades2(){

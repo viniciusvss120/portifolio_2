@@ -1,30 +1,29 @@
 import Image from 'next/image'
 import style from './projeto.module.css'
-import imobiliaria from '../projetos/img/imobiliario.png'
+import dogs from '../projetos/img/dogs.png'
 import js from '../projetos/img/js.png'
-import vue from '../projetos/img/vue.png'
+import react from '../projetos/img/react.png'
 import node from '../projetos/img/node.png'
-import sql from '../projetos/img/mysql.png'
+import mongo from '../projetos/img/mongodb.png'
 import git from '../projetos/img/git.png'
 import github from '../projetos/img/github.png'
 
-export default function SiteImobiliario(){
+export default function Dogs(){
   return (
     <div className={style.container}>
-      <Image src={imobiliaria} alt='imobiliaria'/>
+      <Image src={dogs} alt='dogs'/>
       <div className={style.descricao}>
-        <h3>Site imobiliário</h3>
+        <h3>Dogs</h3>
         <p>
-          Esse projeto tem como finalidade facilitar o acesso a imóveis.
-          No site é possível alugar ou comprar o imóvel.
+          Projeto rede social de pets, projeto desenvolvido juntamente com o curso de React da Origamid.
         </p>
         <div className={style.tecnologias}>
           <span>Tecnologias usadas:</span>
           <ul>
             <li><Image className={style.icon} src={js} alt='js'/></li>
-            <li><Image className={style.icon} src={vue} alt='vue'/></li>
+            <li><Image className={style.icon} src={react} alt='react'/></li>
             <li><Image className={style.icon} src={node} alt='node'/></li>
-            <li><Image className={style.icon} src={sql} alt='sql'/></li>
+            <li><Image className={style.icon} src={mongo} alt='mongo'/></li>
             <li><Image className={style.icon} src={git} alt='git'/></li>
             <li><Image className={style.icon} src={github} alt='github'/></li>
           </ul>
